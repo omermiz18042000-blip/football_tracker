@@ -1,0 +1,34 @@
+STEP 1 - DOWNLOAD VIDEO
+=======================
+
+Command 1: Install yt-dlp
+.\.venv\Scripts\pip install yt-dlp
+
+Press Enter, wait for it to finish.
+
+
+Command 2: Download 3 seconds of football video
+.\.venv\Scripts\yt-dlp --download-sections "*0:0-0:3" -f "best[ext=mp4]" -o "data/test_video.mp4" "https://www.youtube.com/watch?v=KgQquW68E-Q"
+
+Replace the YouTube URL with your own if needed.
+Press Enter, wait for download to complete.
+
+
+
+STEP 2 - INSTALL LIBRARIES
+===========================
+
+Command 3: Install remaining libraries
+.\.venv\Scripts\pip install pandas scipy ultralytics
+
+Press Enter, wait for installation to complete.
+
+
+
+STEP 3 - RUN SCRIPT
+===================
+
+Command 4: Run the video reader script
+.\.venv\Scripts\python.exe src/step1_read_frames.py
+
+Press Enter and see the output.
