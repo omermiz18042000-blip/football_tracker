@@ -25,3 +25,6 @@ Thumbs.db
 
 # YOLO models (auto-downloaded)
 *.pt
+
+# Personal notes (not for public)
+tomer.md
